@@ -13,33 +13,53 @@
 </head>
 
 <body>
-  <div>
-    <label for="name">Fill in your name!</label> <br>
-    <input type="text" name="form-group" id="name">
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="food" value="burger">
-      Burger
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="food" value="hotdog">
-      Hotdog
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="food" value="sushi">
-      Sushi
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="food" value="dessert">
-      Dessert
-    </label>
+  <div class="container">
+    <form id="formOne">
+      <div class="form-group">
+        <label for="name">Fill in your name!</label> <br>
+        <input type="text" class="form-control" name="name" id="name">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Pick your favorite food:</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" class="form-checkinput" value="burger">
+            Burger
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" id="hotdog-input" name="food" class="form-checkinput" value="hotdog">
+            Hotdog
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" class="form-checkinput" value="sushi">
+            Sushi
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" class="form-checkinput" value="dessert">
+            Dessert
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <select class="form-control">
+          <option>Indie</option>
+          <option>Pop</option>
+          <option>Rap</option>
+          <option>Country</option>
+          <option>Rock</option>
+        </select>
+      </div>
+      <button class="btn btn-dark" id="button" type="submit">Submit</button>
+    </form>
+    <div id="food-output"></div>
   </div>
 </body>
 
