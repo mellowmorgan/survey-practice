@@ -1,4 +1,4 @@
-# Wikipedia Page
+# Survery Practice
 
 By: Morgan Waites and Jeff Lai
 
