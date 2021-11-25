@@ -1,4 +1,4 @@
-# Survery Practice
+# Survey Practice
 
 By: Morgan Waites and Jeff Lai
 
